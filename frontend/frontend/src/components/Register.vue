@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <form form @submit.prevent="register" action="action_page.php" class="register" style="border:1px solid #ccc">
+    <!-- <form form @submit.prevent="register" action="action_page.php" class="register" style="border:1px solid #ccc">
       <div class="container">
         <h1>Sign Up</h1>
         <hr>
@@ -31,29 +31,109 @@
           <router-link to="/login">Đăng nhập</router-link>|
         </div>
       </div>
-    </form>
+    </form> -->
+    <section class="h-100 bg-dark">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                    alt="Sample photo"
+                    class="img-fluid"
+                    style="
+                      border-top-left-radius: 0.25rem;
+                      border-bottom-left-radius: 0.25rem;
+                    "
+                  />
+                </div>
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">
+                      Student registration form
+                    </h3>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input
+                        type="text"
+                        id="form3Example9"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="form3Example9">DOB</label>
+                    </div>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input
+                        type="text"
+                        id="form3Example90"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="form3Example90"
+                        >Pincode</label
+                      >
+                    </div>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input
+                        type="text"
+                        id="form3Example99"
+                        class="form-control form-control-lg"
+                      />
+                      <label class="form-label" for="form3Example99"
+                        >Course</label
+                      >
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-3">
+                      <button
+                        type="button"
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-light btn-lg"
+                      >
+                        Reset all
+                      </button>
+                      <button
+                        type="button"
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-warning btn-lg ms-2"
+                      >
+                        Submit form
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
-  name: 'Login_Register',
+  name: "Login_Register",
   props: {
-    msg: String
+    msg: String,
   },
 
   data() {
     return {
       registerForm: {
-        username: '',
-        password: '',
-        email: '',
-        retypePassword: '' // Thêm trường retypePassword vào form data
+        username: "",
+        password: "",
+        email: "",
+        retypePassword: "", // Thêm trường retypePassword vào form data
       },
-      token: '', // Lưu trữ token sau khi đăng nhập thành công
-      passwordMismatch: false // Thêm passwordMismatch vào data để kiểm tra mật khẩu nhập lại
-    }
+      token: "", // Lưu trữ token sau khi đăng nhập thành công
+      passwordMismatch: false, // Thêm passwordMismatch vào data để kiểm tra mật khẩu nhập lại
+    };
   },
   methods: {
     async register() {
@@ -68,17 +148,19 @@ export default {
         var url = `${process.env.VUE_APP_BASE_URL}Auth/Register`;
         //'https://localhost:7074/api/Auth/Register?role=CUSTOMER'
         const response = await axios.post(url, {
-
           username: this.registerForm.username,
           email: this.registerForm.email,
           password: this.registerForm.password,
-          Role: 'CUSTOMER' // Thêm trường Role với giá trị 'CUSTOMER'
+          Role: "CUSTOMER", // Thêm trường Role với giá trị 'CUSTOMER'
         });
         console.log(response.data);
 
-        this.$router.push('/login');
+        this.$router.push("/login");
       } catch (error) {
-        console.error('Đăng ký không thành công:', error.response ? error.response.data : error.message);
+        console.error(
+          "Đăng ký không thành công:",
+          error.response ? error.response.data : error.message
+        );
       }
     },
 
@@ -90,20 +172,18 @@ export default {
     //     console.error('Đã xảy ra lỗi khi tải dữ liệu:', error);
     //   })
     // },
-
   },
   created() {
     //debugger
-    console.log('Component created');
+    console.log("Component created");
     this.titlePage = "Component Setting in created";
     //this.loadData();
-  }
-}
-
+  },
+};
 </script>
 <style scoped>
 /* .error-message {
   color: red;
 } */
-@import url('/public/register.css');
+@import url("/public/register.css");
 </style>
