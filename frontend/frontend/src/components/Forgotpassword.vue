@@ -19,22 +19,30 @@
 
 </template> -->
 <template>
-  <div class="">
+  <div class="" style="background-color: #1f1815">
     <div id="layoutAuthentication">
       <div id="layoutAuthentication_content">
         <main>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-5">
-                <div
-                  class="card shadow-lg border-0 rounded-lg mt-5"
-                  style="background-color: #ace2e1"
-                >
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
                   <div class="card-header">
-                    <h3
-                      class="text-center fw-normal mb-5"
-                      style="letter-spacing: 1px"
-                    >
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i
+                        class="fas fa-cubes fa-2x me-3"
+                        style="color: #ff6219"
+                      ></i>
+                      <span
+                        class="h1 fw-bold mb-0"
+                        style="
+                          font-family: 'Roboto', 'Courier New', monospace;
+                          font-style: oblique;
+                        "
+                        >ĐƯỜNG SẮT HẢI MINH</span
+                      >
+                    </div>
+                    <h3 class="fw-normal mb-5" style="letter-spacing: 1px">
                       Password Recovery
                     </h3>
                   </div>

@@ -32,55 +32,57 @@
         </div>
       </div>
     </form> -->
-    <form @submit.prevent="register">
-      <section class="h-100">
-        <div class="container py-5 h-100">
-          <div
-            class="row d-flex justify-content-center align-items-center h-100"
-          >
-            <div class="col">
-              <div
-                class="card card-registration my-4"
-                style="background-color: #ace2e1"
-              >
-                <div class="row g-0">
-                  <div class="col-xl-6 d-none d-xl-block">
-                    <img
-                      src="https://lh3.googleusercontent.com/proxy/xPjfGpGf0-1vixPKcdFtqm6-qxkIME4H3g9i281-BqRg8fy3LjNCMI2jJFkoNHqZSoFkKwj_sHnOqxrcGk8Rd7GVYhFqxXjkKtrYjU8-L0NE-CTn"
-                      alt="Sample photo"
-                      class="img-fluid w-100 vh-100"
-                      style="
-                        border-top-left-radius: 0.25rem;
-                        border-bottom-left-radius: 0.25rem;
-                      "
-                    />
-                  </div>
-                  <div class="col-xl-6">
-                    <div class="card-body p-md-5 text-black">
-                      <h3 class="fw-normal mb-5" style="letter-spacing: 1px">
-                        Register
-                      </h3>
+    <section class="vh-100" style="background-color: #1f1815">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+                    <form @submit.prevent="register">
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <i
+                          class="fas fa-cubes fa-2x me-3"
+                          style="color: #ff6219"
+                        ></i>
+                        <span
+                          class="h1 fw-bold mb-0"
+                          style="
+                            font-family: 'Roboto', 'Courier New', monospace;
+                            font-style: oblique;
+                          "
+                          >ĐƯỜNG SẮT HẢI MINH</span
+                        >
+                      </div>
 
-                      <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example9"
+                      <h5
+                        class="fw-normal mb-3 pb-3"
+                        style="letter-spacing: 1px"
+                      >
+                        Register
+                      </h5>
+
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="form2Example17"
                           >Username</label
                         >
                         <input
                           type="text"
-                          id="form3Example9"
+                          id="form2Example17"
                           class="form-control form-control-lg"
                           v-model="registerForm.username"
                           required
                         />
                       </div>
 
-                      <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example90"
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="form2Example17"
                           >Email</label
                         >
                         <input
-                          type="text"
-                          id="form3Example90"
+                          type="email"
+                          id="form2Example17"
                           class="form-control form-control-lg"
                           v-model="registerForm.email"
                           requiredv-model="registerForm.email"
@@ -88,13 +90,13 @@
                         />
                       </div>
 
-                      <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example99"
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="form2Example27"
                           >Password</label
                         >
                         <input
-                          type="text"
-                          id="form3Example99"
+                          type="password"
+                          id="form2Example27"
                           class="form-control form-control-lg"
                           v-model="registerForm.password"
                           required
@@ -102,53 +104,54 @@
                           title="Mật khẩu phải chứa ít nhất 6 ký tự"
                         />
                       </div>
+
                       <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example99"
+                        <label class="form-label" for="form2Example27"
                           >Repeat Password</label
                         >
                         <input
-                          type="text"
-                          id="form3Example99"
+                          type="password"
+                          id="form2Example27"
                           class="form-control form-control-lg"
                           v-model="registerForm.retypePassword"
                           required
                         />
-
-                        <div>
-                          <span v-if="passwordMismatch" class="error-message"
-                            >Mật khẩu và mật khẩu nhập lại không khớp.</span
-                          >
-                        </div>
                       </div>
 
-                      <div class="d-flex justify-content-end pt-3">
-                        <button
-                          type="button"
-                          data-mdb-button-init
-                          data-mdb-ripple-init
-                          class="btn btn-light btn-lg"
+                      <div>
+                        <span v-if="passwordMismatch" class="error-message"
+                          >Mật khẩu và mật khẩu nhập lại không khớp.</span
                         >
-                          Reset all
-                        </button>
+                      </div>
+
+                      <div class="pt-1">
                         <button
-                          type="submit"
                           data-mdb-button-init
                           data-mdb-ripple-init
-                          class="btn btn-info btn-lg ms-2"
+                          class="btn btn-info btn-lg btn-block"
+                          type="submit"
                           style="background-color: #26a8bc"
                         >
-                          Submit form
+                          Submit
                         </button>
                       </div>
-                    </div>
+                    </form>
                   </div>
+                </div>
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img
+                    src="https://halotravel.vn/wp-content/uploads/2019/10/duong-tau-ha-noi-08.jpg"
+                    alt="login form"
+                    class="img-fluid h-100"
+                    style="border-radius: 0 1rem 1rem 0"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </form>
+      </div>
+    </section>
   </div>
 </template>
 <script>
