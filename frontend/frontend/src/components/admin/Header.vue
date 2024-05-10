@@ -7,12 +7,10 @@
 
 
             <!-- User Menu-->
-            <li>
-                <!-- <a class="app-nav__item" @click="logout"> -->
-                <!-- <i class='bx bx-log-out bx-rotate-180'></i> -->
-                <button @click="logouts">dang xuat</button>
-                <!-- </a> -->
 
+            <li style="color: aliceblue;" @click="logouts">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
             </li>
         </ul>
         ``
