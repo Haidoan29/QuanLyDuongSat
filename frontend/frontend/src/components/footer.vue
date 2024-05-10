@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>footers</h1>
+        <h1 style="color: azure;">footers</h1>
     </div>
 </template>
 

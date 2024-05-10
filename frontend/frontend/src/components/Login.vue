@@ -26,7 +26,7 @@
                 </h3>
 
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form2Example18" class="form-control form-control-lg"
+                  <input type="text" id="form2Example18" class="form-control form-control-lg"
                     v-model="loginForm.username" required />
                   <label class="form-label" for="form2Example18">Username</label>
                 </div>

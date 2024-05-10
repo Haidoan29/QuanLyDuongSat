@@ -194,3 +194,4 @@ E:\QuanLyDuongSat\Project3_nhom4\Project3_nhom4\obj\Debug\net7.0\refint\Project3
 E:\QuanLyDuongSat\Project3_nhom4\Project3_nhom4\obj\Debug\net7.0\Project3_nhom4.pdb
 E:\QuanLyDuongSat\Project3_nhom4\Project3_nhom4\obj\Debug\net7.0\Project3_nhom4.genruntimeconfig.cache
 E:\QuanLyDuongSat\Project3_nhom4\Project3_nhom4\obj\Debug\net7.0\ref\Project3_nhom4.dll
+E:\QuanLyDuongSat\Project3_nhom4\Project3_nhom4\obj\Debug\net7.0\Project3_nhom4.sourcelink.json
