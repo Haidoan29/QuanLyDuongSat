@@ -37,30 +37,54 @@
                   <input type="password" id="form2Example28" class="form-control form-control-lg"
                     v-model="loginForm.password" required />
                 </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+                    <form @submit.prevent="login">
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219"></i>
+                        <span class="h1 fw-bold mb-0" style="
+                            font-family: 'Roboto', 'Courier New', monospace;
+                            font-style: oblique;
+                          ">ĐƯỜNG SẮT HẢI MINH</span>
+                      </div>
 
-                <div class="pt-1 mb-4">
-                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg btn-block" type="submit">
-                    Login
-                  </button>
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">
+                        Log In
+                      </h5>
+
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="form-label" for="form2Example17">Username</label>
+                        <input type="text" id="form2Example17" class="form-control form-control-lg"
+                          v-model="loginForm.username" required />
+                      </div>
+
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="form-label" for="form2Example27">Password</label>
+                        <input type="password" id="form2Example27" class="form-control form-control-lg"
+                          v-model="loginForm.password" required />
+                      </div>
+
+                      <div class="pt-1 mb-4">
+                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg btn-block"
+                          type="submit">
+                          Login
+                        </button>
+                      </div>
+
+                      <a class="text-muted" href="/forgotpassword" @click="goToForgotpassword">Forgot password?</a>
+                      <p class="mb-5 pb-lg-2" style="color: #393f81">
+                        Don't have an account?
+                        <a href="/register" @click="goToRegister" class="link-info">Register here</a>
+                      </p>
+                    </form>
+                  </div>
                 </div>
-
-                <p class="small mb-5 pb-lg-2">
-                  <a class="text-muted" href="/forgotpassword" @click="goToForgotpassword">Forgot password?</a>
-                </p>
-                <p>
-                  Don't have an account?
-                  <a href="/register" @click="goToRegister" class="link-info">Register here</a>
-                </p>
               </form>
             </div>
           </div>
-          <div class="col-sm-6 px-0 d-none d-sm-block">
-            <img
-              src="https://lh3.googleusercontent.com/proxy/xPjfGpGf0-1vixPKcdFtqm6-qxkIME4H3g9i281-BqRg8fy3LjNCMI2jJFkoNHqZSoFkKwj_sHnOqxrcGk8Rd7GVYhFqxXjkKtrYjU8-L0NE-CTn"
-              alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: right" />
-          </div>
         </div>
       </div>
+
     </section>
     <!-- <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p> -->
   </div>

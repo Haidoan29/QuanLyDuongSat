@@ -1,436 +1,441 @@
 <template>
-    <section class="banner" id="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="left-side">
-                        <div class="logo">
-                            <img src="img/logo.png" alt="Flight Template">
-                        </div>
-                        <div class="tabs-content">
-                            <h4>Choose Your Direction:</h4>
-                            <ul class="social-links">
-                                <li><a href="https://www.facebook.com/Share-Source-Code-Website-189970988225280/">Find
-                                        us on <em>Facebook</em><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="http://youtube.com/">Our <em>YouTube</em> Channel<i
-                                            class="fa fa-youtube"></i></a></li>
-                                <li><a href="http://instagram.com/">Follow our <em>instagram</em><i
-                                            class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="page-direction-button">
-                            <a href="contact.html"><i class="fa fa-phone"></i>Contact Us Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-md-offset-1">
-                    <section id="first-tab-group" class="tabgroup">
-                        <div id="tab1">
-                            <div class="submit-form">
-                                <h4>Check availability for <em>direction</em>:</h4>
-                                <form id="form-submit" action="#" method="get">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="from">From:</label>
-                                                <select required name='from' onchange='this.form.()'>
-                                                    <option value="">Select a location...</option>
-                                                    <option value="Cambodia">Cambodia</option>
-                                                    <option value="Hong Kong">Hong Kong</option>
-                                                    <option value="India">India</option>
-                                                    <option value="Japan">Japan</option>
-                                                    <option value="Korea">Korea</option>
-                                                    <option value="Laos">Laos</option>
-                                                    <option value="Myanmar">Myanmar</option>
-                                                    <option value="Singapore">Singapore</option>
-                                                    <option value="Thailand">Thailand</option>
-                                                    <option value="Vietnam">Vietnam</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="to">To:</label>
-                                                <select required name='to' onchange='this.form.()'>
-                                                    <option value="">Select a location...</option>
-                                                    <option value="Cambodia">Cambodia</option>
-                                                    <option value="Hong Kong">Hong Kong</option>
-                                                    <option value="India">India</option>
-                                                    <option value="Japan">Japan</option>
-                                                    <option value="Korea">Korea</option>
-                                                    <option value="Laos">Laos</option>
-                                                    <option value="Myanmar">Myanmar</option>
-                                                    <option value="Singapore">Singapore</option>
-                                                    <option value="Thailand">Thailand</option>
-                                                    <option value="Vietnam">Vietnam</option>
-                                                </select>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="departure">Departure date:</label>
-                                                <input name="deparure" type="text" class="form-control date"
-                                                    id="deparure" placeholder="Select date..." required=""
-                                                    onchange='this.form.()'>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="return">Return date:</label>
-                                                <input name="return" type="text" class="form-control date" id="return"
-                                                    placeholder="Select date..." required="" onchange='this.form.()'>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="radio-select">
-                                                <div class="row">
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                                        <label for="round">Round</label>
-                                                        <input type="radio" name="trip" id="round" value="round"
-                                                            required="required" onchange='this.form.()'>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                                        <label for="oneway">Oneway</label>
-                                                        <input type="radio" name="trip" id="oneway" value="one-way"
-                                                            required="required" onchange='this.form.()'>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <button type="submit" id="form-submit" class="btn">Order Ticket
-                                                    Now</button>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+  <section class="banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="left-side">
+            <div class="logo">
+              <img src="img/logo.png" alt="Flight Template" />
             </div>
-        </div>
-    </section>
-
-
-
-    <div class="tabs-content" id="weather">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h2>Check Weather For 5 NEXT Days</h2>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="col-md-12">
-                        <div class="weather-content">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-                                        <li><a href="#monday" class="active">Monday</a></li>
-                                        <li><a href="#tuesday">Tuesday</a></li>
-                                        <li><a href="#wednesday">Wednesday</a></li>
-                                        <li><a href="#thursday">Thursday</a></li>
-                                        <li><a href="#friday">Friday</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-12">
-                                    <section id="second-tab-group" class="weathergroup">
-                                        <div id="monday">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Myanmar</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-03.png" alt="">
-                                                        </div>
-                                                        <span>32&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>26&deg;</span></li>
-                                                            <li>12PM <span>32&deg;</span></li>
-                                                            <li>6PM <span>28&deg;</span></li>
-                                                            <li>12AM <span>22&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Thailand</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-02.png" alt="">
-                                                        </div>
-                                                        <span>28&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>20&deg;</span></li>
-                                                            <li>12PM <span>28&deg;</span></li>
-                                                            <li>6PM <span>26&deg;</span></li>
-                                                            <li>12AM <span>18&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>India</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-01.png" alt="">
-                                                        </div>
-                                                        <span>33&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>26&deg;</span></li>
-                                                            <li>12PM <span>33&deg;</span></li>
-                                                            <li>6PM <span>29&deg;</span></li>
-                                                            <li>12AM <span>27&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="tuesday">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Myanmar</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-02.png" alt="">
-                                                        </div>
-                                                        <span>28&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>18&deg;</span></li>
-                                                            <li>12PM <span>27&deg;</span></li>
-                                                            <li>6PM <span>25&deg;</span></li>
-                                                            <li>12AM <span>17&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Thailand</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-03.png" alt="">
-                                                        </div>
-                                                        <span>31&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>19&deg;</span></li>
-                                                            <li>12PM <span>28&deg;</span></li>
-                                                            <li>6PM <span>22&deg;</span></li>
-                                                            <li>12AM <span>18&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>India</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-01.png" alt="">
-                                                        </div>
-                                                        <span>26&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>19&deg;</span></li>
-                                                            <li>12PM <span>26&deg;</span></li>
-                                                            <li>6PM <span>22&deg;</span></li>
-                                                            <li>12AM <span>20&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="wednesday">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Myanmar</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-03.png" alt="">
-                                                        </div>
-                                                        <span>31&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>19&deg;</span></li>
-                                                            <li>12PM <span>28&deg;</span></li>
-                                                            <li>6PM <span>22&deg;</span></li>
-                                                            <li>12AM <span>18&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Thailand</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-01.png" alt="">
-                                                        </div>
-                                                        <span>34&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>28&deg;</span></li>
-                                                            <li>12PM <span>34&deg;</span></li>
-                                                            <li>6PM <span>30&deg;</span></li>
-                                                            <li>12AM <span>29&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>India</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-02.png" alt="">
-                                                        </div>
-                                                        <span>28&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>18&deg;</span></li>
-                                                            <li>12PM <span>27&deg;</span></li>
-                                                            <li>6PM <span>25&deg;</span></li>
-                                                            <li>12AM <span>17&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="thursday">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Myanmar</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-01.png" alt="">
-                                                        </div>
-                                                        <span>27&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>21&deg;</span></li>
-                                                            <li>12PM <span>27&deg;</span></li>
-                                                            <li>6PM <span>22&deg;</span></li>
-                                                            <li>12AM <span>18&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Thailand</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-02.png" alt="">
-                                                        </div>
-                                                        <span>28&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>18&deg;</span></li>
-                                                            <li>12PM <span>27&deg;</span></li>
-                                                            <li>6PM <span>25&deg;</span></li>
-                                                            <li>12AM <span>17&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>India</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-03.png" alt="">
-                                                        </div>
-                                                        <span>31&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>19&deg;</span></li>
-                                                            <li>12PM <span>28&deg;</span></li>
-                                                            <li>6PM <span>22&deg;</span></li>
-                                                            <li>12AM <span>18&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="friday">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Myanmar</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-03.png" alt="">
-                                                        </div>
-                                                        <span>33&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>28&deg;</span></li>
-                                                            <li>12PM <span>33&deg;</span></li>
-                                                            <li>6PM <span>29&deg;</span></li>
-                                                            <li>12AM <span>27&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>Thailand</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-02.png" alt="">
-                                                        </div>
-                                                        <span>31&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>24&deg;</span></li>
-                                                            <li>12PM <span>31&deg;</span></li>
-                                                            <li>6PM <span>26&deg;</span></li>
-                                                            <li>12AM <span>23&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="weather-item">
-                                                        <h6>India</h6>
-                                                        <div class="weather-icon">
-                                                            <img src="img/weather-icon-01.png" alt="">
-                                                        </div>
-                                                        <span>28&deg;C</span>
-                                                        <ul class="time-weather">
-                                                            <li>6AM <span>24&deg;</span></li>
-                                                            <li>12PM <span>28&deg;</span></li>
-                                                            <li>6PM <span>26&deg;</span></li>
-                                                            <li>12AM <span>22&deg;</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tabs-content">
+              <h4>Choose Your Direction:</h4>
+              <ul class="social-links">
+                <li>
+                  <a href="https://www.facebook.com/Share-Source-Code-Website-189970988225280/">Find us on
+                    <em>Facebook</em><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="http://youtube.com/">Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="http://instagram.com/">Follow our <em>instagram</em><i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
             </div>
+            <div class="page-direction-button">
+              <a href="contact.html"><i class="fa fa-phone"></i>Contact Us Now</a>
+            </div>
+          </div>
         </div>
+        <div class="col-md-5 col-md-offset-1">
+          <section id="first-tab-group" class="tabgroup">
+            <div id="tab1">
+              <div class="submit-form">
+                <h4>Check availability for <em>direction</em>:</h4>
+                <form id="form-submit" action="#" method="get">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <label for="from">From:</label>
+                        <select required name="from" onchange="this.form.()">
+                          <option value="">Select a location...</option>
+                          <option value="Cambodia">Cambodia</option>
+                          <option value="Hong Kong">Hong Kong</option>
+                          <option value="India">India</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Korea">Korea</option>
+                          <option value="Laos">Laos</option>
+                          <option value="Myanmar">Myanmar</option>
+                          <option value="Singapore">Singapore</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Vietnam">Vietnam</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <label for="to">To:</label>
+                        <select required name="to" onchange="this.form.()">
+                          <option value="">Select a location...</option>
+                          <option value="Cambodia">Cambodia</option>
+                          <option value="Hong Kong">Hong Kong</option>
+                          <option value="India">India</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Korea">Korea</option>
+                          <option value="Laos">Laos</option>
+                          <option value="Myanmar">Myanmar</option>
+                          <option value="Singapore">Singapore</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Vietnam">Vietnam</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <label for="departure">Departure date:</label>
+                        <input name="deparure" type="text" class="form-control date" id="deparure"
+                          placeholder="Select date..." required="" onchange="this.form.()" />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <label for="return">Return date:</label>
+                        <input name="return" type="text" class="form-control date" id="return"
+                          placeholder="Select date..." required="" onchange="this.form.()" />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="radio-select">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label for="round">Round</label>
+                            <input type="radio" name="trip" id="round" value="round" required="required"
+                              onchange="this.form.()" />
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label for="oneway">Oneway</label>
+                            <input type="radio" name="trip" id="oneway" value="one-way" required="required"
+                              onchange="this.form.()" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="btn">
+                          Order Ticket Now
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
+  </section>
 
-
-    <section class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-item first-service">
-                        <div class="service-icon"></div>
-                        <h4>Easy Tooplate</h4>
-                        <p>Donec varius porttitor iaculis. Integer sollicitudin erat et ligula viverra vulputate. In in
-                            quam efficitur, pulvinar justo ut, tempor nunc. Phasellus pharetra quis odio.</p>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item second-service">
-                        <div class="service-icon"></div>
-                        <h4>Unique Ideas</h4>
-                        <p>Cras ligula diam, tristique at aliquam at, fermentum auctor turpis. Proin leo massa, iaculis
-                            elementum massa et, consectetur varius dolor. Fusce sed ipsum sit.</p>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item third-service">
-                        <div class="service-icon"></div>
-                        <h4>Best Support</h4>
-                        <p>Fusce leo dui. Mauris et justo eget arcu ultricies porta. Nulla facilisi. Nulla nec risus sit
-                            amet magna hendrerit venenatis. Sed porta tincidunt lectus eget ultrices.</p>
-
-                    </div>
-                </div>
-            </div>
+  <div class="tabs-content" id="weather">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Check Weather For 5 NEXT Days</h2>
+          </div>
         </div>
-    </section>
+        <div class="wrapper">
+          <div class="col-md-12">
+            <div class="weather-content">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="tabs clearfix" data-tabgroup="second-tab-group">
+                    <li><a href="#monday" class="active">Monday</a></li>
+                    <li><a href="#tuesday">Tuesday</a></li>
+                    <li><a href="#wednesday">Wednesday</a></li>
+                    <li><a href="#thursday">Thursday</a></li>
+                    <li><a href="#friday">Friday</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-12">
+                  <section id="second-tab-group" class="weathergroup">
+                    <div id="monday">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Myanmar</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-03.png" alt="" />
+                            </div>
+                            <span>32&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>26&deg;</span></li>
+                              <li>12PM <span>32&deg;</span></li>
+                              <li>6PM <span>28&deg;</span></li>
+                              <li>12AM <span>22&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Thailand</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-02.png" alt="" />
+                            </div>
+                            <span>28&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>20&deg;</span></li>
+                              <li>12PM <span>28&deg;</span></li>
+                              <li>6PM <span>26&deg;</span></li>
+                              <li>12AM <span>18&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>India</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-01.png" alt="" />
+                            </div>
+                            <span>33&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>26&deg;</span></li>
+                              <li>12PM <span>33&deg;</span></li>
+                              <li>6PM <span>29&deg;</span></li>
+                              <li>12AM <span>27&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="tuesday">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Myanmar</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-02.png" alt="" />
+                            </div>
+                            <span>28&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>18&deg;</span></li>
+                              <li>12PM <span>27&deg;</span></li>
+                              <li>6PM <span>25&deg;</span></li>
+                              <li>12AM <span>17&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Thailand</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-03.png" alt="" />
+                            </div>
+                            <span>31&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>19&deg;</span></li>
+                              <li>12PM <span>28&deg;</span></li>
+                              <li>6PM <span>22&deg;</span></li>
+                              <li>12AM <span>18&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>India</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-01.png" alt="" />
+                            </div>
+                            <span>26&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>19&deg;</span></li>
+                              <li>12PM <span>26&deg;</span></li>
+                              <li>6PM <span>22&deg;</span></li>
+                              <li>12AM <span>20&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="wednesday">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Myanmar</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-03.png" alt="" />
+                            </div>
+                            <span>31&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>19&deg;</span></li>
+                              <li>12PM <span>28&deg;</span></li>
+                              <li>6PM <span>22&deg;</span></li>
+                              <li>12AM <span>18&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Thailand</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-01.png" alt="" />
+                            </div>
+                            <span>34&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>28&deg;</span></li>
+                              <li>12PM <span>34&deg;</span></li>
+                              <li>6PM <span>30&deg;</span></li>
+                              <li>12AM <span>29&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>India</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-02.png" alt="" />
+                            </div>
+                            <span>28&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>18&deg;</span></li>
+                              <li>12PM <span>27&deg;</span></li>
+                              <li>6PM <span>25&deg;</span></li>
+                              <li>12AM <span>17&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="thursday">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Myanmar</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-01.png" alt="" />
+                            </div>
+                            <span>27&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>21&deg;</span></li>
+                              <li>12PM <span>27&deg;</span></li>
+                              <li>6PM <span>22&deg;</span></li>
+                              <li>12AM <span>18&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Thailand</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-02.png" alt="" />
+                            </div>
+                            <span>28&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>18&deg;</span></li>
+                              <li>12PM <span>27&deg;</span></li>
+                              <li>6PM <span>25&deg;</span></li>
+                              <li>12AM <span>17&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>India</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-03.png" alt="" />
+                            </div>
+                            <span>31&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>19&deg;</span></li>
+                              <li>12PM <span>28&deg;</span></li>
+                              <li>6PM <span>22&deg;</span></li>
+                              <li>12AM <span>18&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="friday">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Myanmar</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-03.png" alt="" />
+                            </div>
+                            <span>33&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>28&deg;</span></li>
+                              <li>12PM <span>33&deg;</span></li>
+                              <li>6PM <span>29&deg;</span></li>
+                              <li>12AM <span>27&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>Thailand</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-02.png" alt="" />
+                            </div>
+                            <span>31&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>24&deg;</span></li>
+                              <li>12PM <span>31&deg;</span></li>
+                              <li>6PM <span>26&deg;</span></li>
+                              <li>12AM <span>23&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="weather-item">
+                            <h6>India</h6>
+                            <div class="weather-icon">
+                              <img src="img/weather-icon-01.png" alt="" />
+                            </div>
+                            <span>28&deg;C</span>
+                            <ul class="time-weather">
+                              <li>6AM <span>24&deg;</span></li>
+                              <li>12PM <span>28&deg;</span></li>
+                              <li>6PM <span>26&deg;</span></li>
+                              <li>12AM <span>22&deg;</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-item first-service">
+            <div class="service-icon"></div>
+            <h4>Easy Tooplate</h4>
+            <p>
+              Donec varius porttitor iaculis. Integer sollicitudin erat et
+              ligula viverra vulputate. In in quam efficitur, pulvinar justo ut,
+              tempor nunc. Phasellus pharetra quis odio.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item second-service">
+            <div class="service-icon"></div>
+            <h4>Unique Ideas</h4>
+            <p>
+              Cras ligula diam, tristique at aliquam at, fermentum auctor
+              turpis. Proin leo massa, iaculis elementum massa et, consectetur
+              varius dolor. Fusce sed ipsum sit.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item third-service">
+            <div class="service-icon"></div>
+            <h4>Best Support</h4>
+            <p>
+              Fusce leo dui. Mauris et justo eget arcu ultricies porta. Nulla
+              facilisi. Nulla nec risus sit amet magna hendrerit venenatis. Sed
+              porta tincidunt lectus eget ultrices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-    <!-- <div class="tabs-content" id="recommended-hotel">
+  <!-- <div class="tabs-content" id="recommended-hotel">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -684,15 +689,15 @@
 
 <script>
 export default {
-    methods: {
-        logout() {
-            // Xử lý đăng xuất ở đây
-            // Ví dụ: xóa token khỏi Local Storage và chuyển hướng đến trang đăng nhập
-            localStorage.removeItem('token');
-            this.$router.push('/login');
-            window.location.reload();
-        }
+  methods: {
+    logout() {
+      // Xử lý đăng xuất ở đây
+      // Ví dụ: xóa token khỏi Local Storage và chuyển hướng đến trang đăng nhập
+      localStorage.removeItem('token');
+      this.$router.push('/login');
+      window.location.reload();
     }
+  }
 };
 </script>
 
@@ -705,9 +710,8 @@ export default {
 @import url("@/assets/css/datepicker.css");
 @import url("@/assets/css/tooplate-style.css");
 
-
 .home {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 </style>
