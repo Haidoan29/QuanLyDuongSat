@@ -11,27 +11,19 @@
               <h4>Choose Your Direction:</h4>
               <ul class="social-links">
                 <li>
-                  <a
-                    href="https://www.facebook.com/Share-Source-Code-Website-189970988225280/"
-                    >Find us on <em>Facebook</em><i class="fa fa-facebook"></i
-                  ></a>
+                  <a href="https://www.facebook.com/Share-Source-Code-Website-189970988225280/">Find us on
+                    <em>Facebook</em><i class="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="http://youtube.com/"
-                    >Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i
-                  ></a>
+                  <a href="http://youtube.com/">Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i></a>
                 </li>
                 <li>
-                  <a href="http://instagram.com/"
-                    >Follow our <em>instagram</em><i class="fa fa-instagram"></i
-                  ></a>
+                  <a href="http://instagram.com/">Follow our <em>instagram</em><i class="fa fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
             <div class="page-direction-button">
-              <a href="contact.html"
-                ><i class="fa fa-phone"></i>Contact Us Now</a
-              >
+              <a href="contact.html"><i class="fa fa-phone"></i>Contact Us Now</a>
             </div>
           </div>
         </div>
@@ -81,29 +73,15 @@
                     <div class="col-md-6">
                       <fieldset>
                         <label for="departure">Departure date:</label>
-                        <input
-                          name="deparure"
-                          type="text"
-                          class="form-control date"
-                          id="deparure"
-                          placeholder="Select date..."
-                          required=""
-                          onchange="this.form.()"
-                        />
+                        <input name="deparure" type="text" class="form-control date" id="deparure"
+                          placeholder="Select date..." required="" onchange="this.form.()" />
                       </fieldset>
                     </div>
                     <div class="col-md-6">
                       <fieldset>
                         <label for="return">Return date:</label>
-                        <input
-                          name="return"
-                          type="text"
-                          class="form-control date"
-                          id="return"
-                          placeholder="Select date..."
-                          required=""
-                          onchange="this.form.()"
-                        />
+                        <input name="return" type="text" class="form-control date" id="return"
+                          placeholder="Select date..." required="" onchange="this.form.()" />
                       </fieldset>
                     </div>
                     <div class="col-md-6">
@@ -111,25 +89,13 @@
                         <div class="row">
                           <div class="col-md-6 col-sm-6 col-xs-6">
                             <label for="round">Round</label>
-                            <input
-                              type="radio"
-                              name="trip"
-                              id="round"
-                              value="round"
-                              required="required"
-                              onchange="this.form.()"
-                            />
+                            <input type="radio" name="trip" id="round" value="round" required="required"
+                              onchange="this.form.()" />
                           </div>
                           <div class="col-md-6 col-sm-6 col-xs-6">
                             <label for="oneway">Oneway</label>
-                            <input
-                              type="radio"
-                              name="trip"
-                              id="oneway"
-                              value="one-way"
-                              required="required"
-                              onchange="this.form.()"
-                            />
+                            <input type="radio" name="trip" id="oneway" value="one-way" required="required"
+                              onchange="this.form.()" />
                           </div>
                         </div>
                       </div>
@@ -727,11 +693,11 @@ export default {
     logout() {
       // Xử lý đăng xuất ở đây
       // Ví dụ: xóa token khỏi Local Storage và chuyển hướng đến trang đăng nhập
-      localStorage.removeItem("token");
-      this.$router.push("/login");
+      localStorage.removeItem('token');
+      this.$router.push('/login');
       window.location.reload();
-    },
-  },
+    }
+  }
 };
 </script>
 
