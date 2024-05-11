@@ -33,110 +33,59 @@
       </div>
     </form> -->
     <form @submit.prevent="register">
-      <section class="h-100">
+      <section class="h-100 bg-dark">
         <div class="container py-5 h-100">
-          <div
-            class="row d-flex justify-content-center align-items-center h-100"
-          >
+          <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col">
-              <div
-                class="card card-registration my-4"
-                style="background-color: #ace2e1"
-              >
+              <div class="card card-registration my-4">
                 <div class="row g-0">
                   <div class="col-xl-6 d-none d-xl-block">
-                    <img
-                      src="https://lh3.googleusercontent.com/proxy/xPjfGpGf0-1vixPKcdFtqm6-qxkIME4H3g9i281-BqRg8fy3LjNCMI2jJFkoNHqZSoFkKwj_sHnOqxrcGk8Rd7GVYhFqxXjkKtrYjU8-L0NE-CTn"
-                      alt="Sample photo"
-                      class="img-fluid w-100 vh-100"
-                      style="
-                        border-top-left-radius: 0.25rem;
-                        border-bottom-left-radius: 0.25rem;
-                      "
-                    />
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                      alt="Sample photo" class="img-fluid" style="
+                      border-top-left-radius: 0.25rem;
+                      border-bottom-left-radius: 0.25rem;
+                    " />
                   </div>
                   <div class="col-xl-6">
                     <div class="card-body p-md-5 text-black">
-                      <h3 class="fw-normal mb-5" style="letter-spacing: 1px">
-                        Register
+                      <h3 class="mb-5 text-uppercase">
+                        Student registration form
                       </h3>
 
                       <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example9"
-                          >Username</label
-                        >
-                        <input
-                          type="text"
-                          id="form3Example9"
-                          class="form-control form-control-lg"
-                          v-model="registerForm.username"
-                          required
-                        />
+                        <input type="text" id="form3Example9" class="form-control form-control-lg"
+                          v-model="registerForm.username" required />
+                        <label class="form-label" for="form3Example9">Username</label>
                       </div>
 
                       <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example90"
-                          >Email</label
-                        >
-                        <input
-                          type="text"
-                          id="form3Example90"
-                          class="form-control form-control-lg"
-                          v-model="registerForm.email"
-                          requiredv-model="registerForm.email"
-                          required
-                        />
+                        <input type="text" id="form3Example90" class="form-control form-control-lg"
+                          v-model="registerForm.email" requiredv-model="registerForm.email" required />
+                        <label class="form-label" for="form3Example90">Email</label>
                       </div>
 
                       <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example99"
-                          >Password</label
-                        >
-                        <input
-                          type="text"
-                          id="form3Example99"
-                          class="form-control form-control-lg"
-                          v-model="registerForm.password"
-                          required
-                          pattern=".{6,}"
-                          title="Mật khẩu phải chứa ít nhất 6 ký tự"
-                        />
+                        <input type="text" id="form3Example99" class="form-control form-control-lg"
+                          v-model="registerForm.password" required pattern=".{6,}"
+                          title="Mật khẩu phải chứa ít nhất 6 ký tự" />
+                        <label class="form-label" for="form3Example99">Password</label>
                       </div>
                       <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form3Example99"
-                          >Repeat Password</label
-                        >
-                        <input
-                          type="text"
-                          id="form3Example99"
-                          class="form-control form-control-lg"
-                          v-model="registerForm.retypePassword"
-                          required
-                        />
-
+                        <input type="text" id="form3Example99" class="form-control form-control-lg"
+                          v-model="registerForm.retypePassword" required />
+                        <label class="form-label" for="form3Example99">Repeat Password</label>
                         <div>
-                          <span v-if="passwordMismatch" class="error-message"
-                            >Mật khẩu và mật khẩu nhập lại không khớp.</span
-                          >
+                          <span v-if="passwordMismatch" class="error-message">Mật khẩu và mật khẩu nhập lại không
+                            khớp.</span>
                         </div>
                       </div>
 
                       <div class="d-flex justify-content-end pt-3">
-                        <button
-                          type="button"
-                          data-mdb-button-init
-                          data-mdb-ripple-init
-                          class="btn btn-light btn-lg"
-                        >
+                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg">
                           Reset all
                         </button>
-                        <button
-                          type="submit"
-                          data-mdb-button-init
-                          data-mdb-ripple-init
-                          class="btn btn-info btn-lg ms-2"
-                          style="background-color: #26a8bc"
-                        >
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                          class="btn btn-warning btn-lg ms-2">
                           Submit form
                         </button>
                       </div>
